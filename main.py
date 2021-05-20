@@ -21,9 +21,11 @@ def typing_test(picker):
       print("Please try again")
       print(picker)
       basetest = input("")
+   
     end = int(time.time())
     wpm = round(len(picker) / 5 / ((end - start) / 60 ))
     print(str(wpm) + " Words per Minute" )
+    
   else:
     print("Error: Input not recognized")
     sys.exit()
